@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CFG Gen</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form onsubmit="download()" id="cfg-form">
+            <label for="cfg-texture-q">Texture Quality</label>
+            <select id="cfg-texture-q">
+                <option name="low-q">Low</option>
+                <option name="mid-q">Medium</option>
+                <option name="high-q">High</option>
+                <option name="ultra-q">Ultra</option>
+            </select><br>
+
+            <label for="cfg-model-q">Model Quality</label>
+            <select id="cfg-model-q">
+                <option name="low-q">Low</option>
+                <option name="mid-q">Medium</option>
+                <option name="high-q">High</option>
+            </select><br>
+
+            <label for="cfg-shadow-q">Shadow Quality</label>
+            <select id="cfg-shadow-q">
+                <option name="low-q">Low</option>
+                <option name="mid-q">Medium</option>
+                <option name="high-q">High</option>
+            </select><br>
+
+            <label for="cfg-shader-q">Shader Quality</label>
+            <select id="cfg-shader-q">
+                <option name="low-q">Low</option>
+                <option name="high-q">High</option>
+            </select><br>
+
+            <label for="cfg-antialiasing-q">Anti-Aliasing</label>
+            <select id="cfg-antialiasing-q">
+                <option name="fsaa-off-q">FSAA Off</option>
+                <option name="fsaa-2-q">FSAA 2x</option>
+                <option name="fsaa-4-q">FSAA 4x</option>
+                <option name="msaa-8-q">MSAA 8x</option>
+                <option name="csaa-8-q">CSAA 8x</option>
+                <option name="csaa-16-q">CSAA 16x</option>
+                <option name="csaa-16q-q">CSAA 16xQ</option>
+            </select><br>
+
+            <label for="cfg-vsync-q">V-Sync</label>
+            <select id="cfg-vsync-q">
+                <option name="off-q">Off</option>
+                <option name="on-q">On</option>
+            </select><br>
+
+            <label for="cfg-hdr-q">HDR</label>
+            <select id="cfg-hdr-q">
+                <option name="off-q">Off</option>
+                <option name="ldr-q">LDR + Bloom</option>
+                <option name="full-q">Full HDR</option>
+            </select><br>
+
+            <input type="submit" value="Download Config!">
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
